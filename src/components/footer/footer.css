@@ -1,0 +1,63 @@
+.footer {
+  height: max-content;
+  /* border: 2px solid; */
+  display: flex;
+  justify-content: center;
+  color: rgb(106, 106, 106);
+  padding: 30px;
+}
+.footmain {
+  width: 23vw;
+}
+.footmain img {
+  filter: invert();
+  margin: 20px 0px;
+}
+.social {
+  padding-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+.social img {
+  height: 30px;
+  width: 30px;
+}
+.foot-compony {
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.foot-compony li {
+  list-style: none;
+  margin-bottom: 20px;
+}.foot-support {
+width: 30vw;
+}
+.foot-support li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.foot-update{
+  width: 30vw;
+
+}
+.foot-email{
+  display: flex;
+  align-items: center;
+  
+}
+.foot-email button {
+  color: white;
+  background-color: black;
+  border: none;
+  width: 40px;
+  height: 40px;
+}.foot-email button img{
+  filter: invert();
+}
+.foot-update input{
+  width: 15vw;
+  height: 40px;padding: 10px;
+  margin: 20px 0;
+}

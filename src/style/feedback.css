@@ -1,0 +1,29 @@
+.feedback-box{
+    height: 240px;width: 320px;
+    border: 1px solid rgb(210, 210, 210);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 12px;
+    background-color: white;
+}
+.feedback-box:hover{
+    transition: 0.2s;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.197);
+}
+.intro{
+    display: flex;
+}
+.intro p{
+    font-size: 12px;
+    font-weight: 300;
+}.intro img{
+    height: 40px;width: 40px;
+    border-radius: 50%;
+    background-color: rgb(171, 170, 170);
+}.review{
+    color: rgb(124, 123, 123);
+    font-size: 14px;
+}
+.star{
+    margin: 20px;
+}

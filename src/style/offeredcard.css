@@ -1,0 +1,49 @@
+.Offercard-box {
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+}
+.Offercard-box:hover {
+  transition: 0.3s ease-in-out;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.268);
+  transform: scale(30px);
+}
+.off {
+  height: 20px;
+  width: 80px;
+  font-size: 12px;
+  margin:15px 0px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.745);
+  border-radius: 12px;
+  padding: 2px;
+  text-align: center;
+  color: rgb(71, 70, 70);
+}
+.name {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 5px 10px;
+}
+.description {
+  font-size: 12px;
+  color: beige;
+  margin: 5px 10px;
+}
+.exp {
+  margin: 30px 10px 10px 10px;
+  font-size: 10px;
+}
+.Offercard-box a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+.Offercard-box a img {
+  color: white;
+  width: 15px;
+  height: 15px;
+  filter: invert();
+}

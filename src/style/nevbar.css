@@ -1,0 +1,106 @@
+
+.nevbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.4s ease;
+  z-index: 1000;
+}
+
+/* When scrolled */
+.nevbar.white {
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+/* When top (not scrolled) */
+.nevbar.transparent {
+  background-color: transparent;
+  color: white;
+  box-shadow: none;
+}
+
+/* Logo and icons filter */
+.invert-on {
+  filter: invert(1);
+  transition: filter 0.3s ease;
+}
+.invert-off {
+  filter: invert(0);
+  transition: filter 0.3s ease;
+}
+
+/* Nav links */
+.nevoption ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nevoption a {
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nevbar.transparent a {
+  color: white;
+}
+.nevbar.white a {
+  color: black;
+}
+
+/* Active link */
+.active {
+  font-weight: bold;
+  position: relative;
+}
+.active::after {
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  content: '';
+  height: 2px;
+  width: 100%;
+  background-color: currentColor;
+}
+
+/* Buttons */
+.button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.button img {
+  width: 24px;
+  height: 24px;
+  transition: filter 0.3s ease;
+}
+
+/* Button styles */
+.light-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dark-btn {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 6px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}

@@ -1,0 +1,61 @@
+.checkRoom {
+  /* height: 90px; */
+  display: flex;
+  width: max-content;
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  gap: 10px;
+  margin: 20px 5px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.checkRoom p {
+  color: rgb(99, 99, 99);
+  font-size: 15px;
+}
+.destination input {
+  height: 30px;
+  width: 160px;
+  padding: 5px;
+  border: 1px solid rgb(185, 184, 184);
+  border-radius: 4px;
+  margin: 5px 0px;
+}
+.checkin input {
+  height: 30px;
+  width: 120px;
+  padding: 5px;
+  border: 1px solid rgb(185, 184, 184);
+  border-radius: 4px;
+  margin: 5px 0px;
+}
+.checkout input {
+  width: 120px;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid rgb(185, 184, 184);
+  border-radius: 4px;
+  margin: 5px 0px;
+}
+.guest input {
+  width: 70px;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid rgb(185, 184, 184);
+  border-radius: 4px;
+  margin: 5px 0px;
+}
+.checkRoom button {
+  height: 45px;
+  width: 100px;
+  margin: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

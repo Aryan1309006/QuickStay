@@ -1,0 +1,102 @@
+.box {
+  height: 280px;
+  width: 307px;
+  /* border: 2px solid; */
+  margin-top: 200px;
+  border-radius: 12px;
+  margin: 20px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 20px rgb(184, 183, 183);
+     z-index: -1;
+}
+
+.box:hover {
+  box-shadow: 5px 5px 20px grey;
+  transition: 0.3s;
+}
+
+.image {
+  border-radius: 12px 12px 0 0;
+  width: 307px;
+  height: 170px;
+  position: relative;
+  background-color: rgba(88, 87, 87, 0.334);
+}
+
+.image img {
+  width: 307px;
+  height: 170px;
+  /* border: 2px solid;  */
+  border-radius: 12px 12px 0 0;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#tag {
+  position: absolute;
+  margin: 10px;
+  background-color: white;
+  border-radius: 20px;
+  height: 20px;
+  width: max-content;
+  padding: 5px;
+  font-size: 13px;
+}
+
+#location {
+  color: rgb(82, 82, 82);
+}
+
+#location img {
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pri {
+  width: max-content;
+  display: flex;
+  margin: 0 0 0 10px;
+  align-items: center;
+  gap: 5px;
+}
+
+#bold {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#light {
+  color: rgb(60, 60, 60);
+}
+
+.viwe button {
+  margin: 0 20px 0 0;
+  height: 30px;
+  padding: 5px;
+  background-color: white;
+  border: 1px solid rgb(193, 191, 191);
+  border-radius: 5px;
+  color: rgb(133, 133, 133);
+}
+
+.viwe button:hover {
+  background-color: black;
+  color: white;
+  border: none;
+  transition: 0.3s;
+}
+
+/* (Remove the duplicated .box at the end — not needed) */
