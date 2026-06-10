@@ -1,7 +1,7 @@
 .checkRoom {
   /* height: 90px; */
   display: flex;
-  width: max-content;
+  width: 45vw;
   background-color: white;
   padding: 15px;
   border-radius: 5px;

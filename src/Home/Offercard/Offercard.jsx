@@ -1,6 +1,6 @@
 import React from "react";
-import "../style/offeredcard.css";
-import { assets } from "../assets/assets.js";
+import "./offeredcard.css";
+import { assets } from "../../assets/assets.js";
 import { Link } from "react-router-dom";
 
 function Offercard({ item }) {

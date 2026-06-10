@@ -1,3 +1,35 @@
+# QuickStay Component Usage Map
+
+This document maps React components to the files/components that import or render them.
+
+**Component Usage**
+
+- **Nevbar**: used in [src/App.jsx](src/App.jsx#L2) (import and rendered in root layout)
+- **Home**: used in [src/App.jsx](src/App.jsx#L4) (route `/`)
+- **Footer**: used in [src/App.jsx](src/App.jsx#L5) (rendered in root layout)
+- **HotelRoom**: used in [src/App.jsx](src/App.jsx#L6) (route `/room`)
+- **HotelDetail**: imported and rendered in [src/App.jsx](src/App.jsx#L9)
+
+- **Home subcomponents** (used inside [src/Home/Home.jsx](src/Home/Home.jsx#L1)):
+  - `Featured` — renders featured hotel cards ([src/components/Featured.jsx](src/components/Featured.jsx#L1))
+  - `Offercard` — renders exclusive offer cards ([src/components/Offercard.jsx](src/components/Offercard.jsx#L1))
+  - `Feedback` — renders testimonial cards ([src/components/Feedback.jsx](src/components/Feedback.jsx#L1))
+  - `CheckRoom` — booking search form ([src/components/CheckRoom.jsx](src/components/CheckRoom.jsx#L1))
+
+- **HotelRoom subcomponents**:
+  - `Rooms` — used inside [src/components/HotelRoom.jsx](src/components/HotelRoom.jsx#L1) to render room lists ([src/components/Rooms.jsx](src/components/Rooms.jsx#L1))
+
+- **Rooms**: standalone list component; currently not referencing other custom components ([src/components/Rooms.jsx](src/components/Rooms.jsx#L1)).
+- **RoomDetail**: component present at [src/components/RoomDetail.jsx](src/components/RoomDetail.jsx#L1) — not referenced elsewhere in the codebase (no imports found).
+
+- **Offercard**: used in [src/Home/Home.jsx](src/Home/Home.jsx#L1) (see Offers section)
+
+- **Featured**, **Feedback**, **CheckRoom**: all used only inside `Home` as listed above.
+
+If you'd like, I can:
+
+- add links to the exact lines where each component is instantiated; or
+- generate a visual dependency graph (Mermaid) showing these relationships.
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

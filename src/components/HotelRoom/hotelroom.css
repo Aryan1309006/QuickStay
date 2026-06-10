@@ -1,0 +1,54 @@
+.hotelRoom{
+    height: 100vh;
+    padding: 70px;
+}
+.hotelRoom{
+    height: max-content;
+    margin-top:30px  ;
+   
+}
+.main-hroom{
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    gap: 40px;
+}.hotelRoom {
+  display: flex;
+  gap: 2rem;
+}
+
+.filters {
+  width: 280px;
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+  padding: 20px;
+  height: fit-content;
+  position: sticky;
+  top: 20px;
+}
+
+.filters label {
+  display: flex;
+  gap: 10px;
+  margin: 12px 0;
+  color: gray;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}.filter-header button{
+padding: 2px;
+border-radius: 5px;
+color: white;
+background: rgb(65, 176, 255);
+border: none;
+}
+
+.hotellist {
+  flex: 1;
+}

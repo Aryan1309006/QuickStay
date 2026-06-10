@@ -1,6 +1,6 @@
 import React from "react";
-import "../style/feedback.css";
-import { assets } from "../assets/assets";
+import "./feedback.css";
+import { assets } from "../../assets/assets";
 
 function Feedback({ item }) {
   const { image, name, address, rating, review } = item || {};

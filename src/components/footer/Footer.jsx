@@ -4,6 +4,7 @@ import "./footer.css";
 function Footer() {
   return (
     <div className="footer">
+
       <div className="footmain">
         <img src={assets.logo} alt="logo" />
         <div>
@@ -17,6 +18,7 @@ function Footer() {
           <img src={assets.linkendinIcon} alt="" />
         </div>
       </div>
+      <div className="foot-comoponysupport">
       <div className="foot-compony">
         <h3>COMPANY</h3>
         <ul>
@@ -36,6 +38,7 @@ function Footer() {
           <li>Contact Us</li>
           <li>Accessibility</li>
         </ul>
+      </div>
       </div>
       <div className="foot-update">
         <h3>STAY UPDATED</h3>

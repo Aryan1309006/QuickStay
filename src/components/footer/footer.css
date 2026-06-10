@@ -1,16 +1,21 @@
 .footer {
   height: max-content;
-  /* border: 2px solid; */
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   color: rgb(106, 106, 106);
-  padding: 30px;
+  padding: 20px;
+  width: 100%;
+  background:#f6f9fc ;
 }
 .footmain {
-  width: 23vw;
+  width: min(45vw, 300px);
+  display: flex;
+  flex-direction: column;
 }
 .footmain img {
   filter: invert();
+  height: 40px;
   margin: 20px 0px;
 }
 .social {
@@ -22,30 +27,42 @@
   height: 30px;
   width: 30px;
 }
-.foot-compony {
-  width: 30vw;
+.foot-comoponysupport {
   display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: max(45vw, 300px);
+}
+.foot-compony {
+  width: 28vw;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
 }
 .foot-compony li {
   list-style: none;
-  margin-bottom: 20px;
-}.foot-support {
-width: 30vw;
+  margin-bottom: 10px;
+}
+.foot-support {
+  width: max(30vw, 150px);
 }
 .foot-support li {
   list-style: none;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
-.foot-update{
-  width: 30vw;
-
+.foot-update {
+  width: min(300px, 25vw);
+  padding-top: 10px;
 }
-.foot-email{
+.foot-email {
   display: flex;
   align-items: center;
-  
+  width: min(100vw, 300px);
+  /* border: 2px solid; */
+}
+.foot-email input {
+  width: 70px;
 }
 .foot-email button {
   color: white;
@@ -53,11 +70,13 @@ width: 30vw;
   border: none;
   width: 40px;
   height: 40px;
-}.foot-email button img{
+}
+.foot-email button img {
   filter: invert();
 }
-.foot-update input{
+.foot-update input {
   width: 15vw;
-  height: 40px;padding: 10px;
+  height: 40px;
+  padding: 10px;
   margin: 20px 0;
 }

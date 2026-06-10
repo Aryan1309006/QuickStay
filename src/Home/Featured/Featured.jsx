@@ -1,13 +1,14 @@
 import React from "react";
-import { assets } from "../assets/assets.js";
-import "../style/featured.css"; // <-- fix filename if your file is named differently
-
+import { assets } from "../../assets/assets.js";
+import "./featured.css";
+import { Link } from "react-router-dom";
 function Featured({ item }) {
+
   return (
     <div className="box">
       <div className="image">
         <p id="tag">best sell</p>
-        <img src={item} alt="featured hotel" />
+        <img src={item.images[0]} alt="featured hotel" />
       </div>
 
       <div className="info">
@@ -24,11 +25,13 @@ function Featured({ item }) {
 
       <div className="price">
         <div className="pri">
-          <p id="bold">$450</p>
+          <p id="bold">{item.pricePerNight}</p>
           <p id="light">/night</p>
         </div>
         <div className="viwe">
-          <button>view Details</button>
+          <Link to={`/room/${item._id}`}>
+            <button>view Details</button>
+          </Link>
         </div>
       </div>
     </div>

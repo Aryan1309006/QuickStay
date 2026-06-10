@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Home.css";
 import {
   assets,
@@ -6,28 +6,37 @@ import {
   hotelImg,
   exclusiveOffers,
   testimonials,
+  roomsDummyData,
 } from "../assets/assets.js";
-import Featured from "../components/Featured.jsx";
-import { Link } from "react-router-dom";
-import Offercard from "../components/Offercard.jsx";
-import Feedback from "../components/Feedback.jsx";
-import CheckRoom from "../components/CheckRoom.jsx";
+import Featured from "./Featured/Featured.jsx";
+import { Link, useLocation } from "react-router-dom";
+import Offercard from "./Offercard/Offercard.jsx";
+import Feedback from "../Home/Feedback/Feedback.jsx";
+import CheckRoom from "../components/CheckRoom/CheckRoom.jsx";
 
 function Home() {
+    const { pathname } = useLocation();
+ useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // remove if you want instant scroll
+    });
+  }, [pathname]);
+  
   return (
     <>
       <div className="mainimg">
         <div className="text">
-          <p id="blue"> The ultimate hotel experence</p>
-          <p className="heading" >
+            <p className="highlightBadge">The ultimate hotel experience</p>
+          <p className="heading">
             Discover your perfect <br /> gateway destination
           </p>
-          <p id="small">
-            Unparalleled luxary and comfort await at the world's at the most
+          <p className="smallText">
+            Unparalleled luxury and comfort await at the world's most
             exclusive <br />
-            hotel and resorts. Start your journey today
+            hotels and resorts. Start your journey today.
           </p>
-          <CheckRoom/>
+          <CheckRoom />
         </div>
       </div>
 
@@ -39,8 +48,10 @@ function Home() {
           unparalleled and unforgettable experence
         </p>
         <div className="featured-list">
-          {hotelImg.map((img, idx) => (
-            <Featured key={idx} id={idx} item={img} />
+          {roomsDummyData.map((item, idx) => (
+
+            <Featured key={idx} id={idx} item={item} />
+       
           ))}
         </div>
       </div>
@@ -70,11 +81,11 @@ function Home() {
       </div>
 
       <div className="feedback">
-        <h1>What Our Guests Sayes</h1>
+        <h1>What Our Guests Say</h1>
         <p className="light">Discover why discerning travelers choose QuickStory for their luxury accommodations around the world</p>
-        <div className="feeback-boxs">
+        <div className="feedback-boxes">
             {(testimonials || []).map((item, idx) => (
-            <Feedback key={item.id ?? idx} item={item}/>
+            <Feedback key={item.id ?? idx} item={item} />
           ))}
         </div>
       </div>

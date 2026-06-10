@@ -1,0 +1,50 @@
+.rooms-container {
+  width: 80%;
+  height: max-content;
+  display: flex;
+  height: max-content;
+  gap: 20px;
+  border-bottom: 2px solid gainsboro;
+  padding: 10px;
+}
+.rooms-container a {
+  text-decoration: none;
+  color: inherit;
+}
+.images img{
+  /* gap: 5px; */
+  display: flex;
+  width:320px;
+  flex-wrap: wrap;
+  border-radius: 20px; 
+}
+
+.room-content{
+padding: 4px;
+
+}
+.amenities{
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border: none;
+}.amenities div{
+  background: gainsboro;
+  color: rgb(37, 37, 37);
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}.room-content h1{
+  font-family: 'Times New Roman', Times, serif;
+}.address{
+  color: gray;
+
+}.address img{
+  height: 20px;width: 20px; 
+}
+.prices{
+  font-size: 20px;
+}
