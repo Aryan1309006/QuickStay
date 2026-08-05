@@ -1,8 +1,10 @@
 import React from "react";
 import { assets, cities } from "../../assets/assets";
 import "./CheckRoom.css";
+import { useLocation, useNavigate } from "react-router-dom";
 
-const CheckRoom = () => {
+const CheckRoom = ({btntext}) => {
+  const nevigate=useNavigate()
   return (
     <div className="checkRoom">
       <div className="destination">
@@ -43,9 +45,9 @@ const CheckRoom = () => {
 
         <input type="number" name="number" id="number" placeholder="0" />
       </div>
-      <button type="submit">
+      <button type="submit" onClick={()=>{(btntext==="Submit")? `${nevigate('/room')}`:nevigate('/booking')}}>
         {" "}
-        <img src={assets.searchIcon} alt="" /> Submit
+        <img src={assets.searchIcon} alt="" /> {btntext}
       </button>
     </div>
   );

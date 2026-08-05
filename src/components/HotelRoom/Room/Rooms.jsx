@@ -22,14 +22,14 @@ const Rooms = ({ items }) => {
             <img src={assets.locationIcon} alt="" />
             {items.hotel.address}
           </p>
-          <p className="amenities">
+          <div className="amenities">
             {items.amenities.map((facility, index) => (
               <div key={index}>
                 <img src={facilityIcons[facility]} alt={facility} />
                 <span>{facility}</span>
               </div>
             ))}
-          </p>
+          </div>
 
           <p className="prices">
             ₹{room.pricePerNight}

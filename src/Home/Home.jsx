@@ -36,7 +36,7 @@ function Home() {
             exclusive <br />
             hotels and resorts. Start your journey today.
           </p>
-          <CheckRoom />
+          <CheckRoom btntext={"Submit"} />
         </div>
       </div>
 

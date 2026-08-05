@@ -1,0 +1,111 @@
+.roomdetail {
+  height:max-content;
+  width: 100%;
+  padding-top: 17vh;
+  padding: 15vh 20px 20px 20px;
+}
+.roomdetails-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* background: #000; */
+}
+.hotel-name {
+  font-family: times new roman;
+  font-size: 2.5rem;
+  font-weight: 20px;
+}
+.roodetail-name {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+#discount {
+  background-color: rgb(250, 176, 4);
+  padding: 5px;
+  border-radius: 12px;
+  color: white;
+  font-size: 1rem;
+}
+#address {
+  color: gainsboro;
+}
+
+
+.room-img {
+  width: 75%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr;
+  gap: 16px;
+  height: 400px;
+}
+
+.main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.sub-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.sub-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+
+.basic-detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+}.aminity #text{
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400px;
+}#price{
+    font-size:35px;
+}.commandata{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 70px;
+}.commandata .data{
+    display: flex;gap: 10px;
+}.data #title{
+    font-weight: bold;
+    font-size: 15px;
+}.data #discription{
+    font-size: 12px;
+    color: gray;
+}
+
+.ownersdatail{
+    display: flex;
+    gap: 20px;
+    padding: 20px 70px;
+}
+.owner-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: rgb(10, 146, 244);
+    font-size: 20px;
+}
+.ownersdatail .discription{
+    display: flex; gap: 40px;
+    color: gray;
+    font-size: 15px;
+}
+.checkroom{
+  width: 100%; 
+  padding-left: 50px;
+}

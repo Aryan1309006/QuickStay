@@ -65,8 +65,9 @@
 
 .featured-list {
   display: flex;
+  gap:2px;
   flex-wrap: wrap;
-  gap: 16px;
+ width: max(70%,300px);
   justify-content: center;
   padding: 20px;
 }

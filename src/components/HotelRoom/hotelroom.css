@@ -52,3 +52,9 @@ border: none;
 .hotellist {
   flex: 1;
 }
+
+@media (max-width:320px) {
+  .hotelRoom{
+   flex-direction: column;
+  }
+}
