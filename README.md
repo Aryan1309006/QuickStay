@@ -1,48 +1,170 @@
-# QuickStay Component Usage Map
+# 🏨 QuickStay — Hotel Room Booking Platform
 
-This document maps React components to the files/components that import or render them.
+QuickStay is a modern and responsive hotel room booking platform that allows users to discover hotels, explore available rooms, view room details, and book their stay through a simple and intuitive interface.
 
-**Component Usage**
+## ✨ Features
 
-- **Nevbar**: used in [src/App.jsx](src/App.jsx#L2) (import and rendered in root layout)
-- **Home**: used in [src/App.jsx](src/App.jsx#L4) (route `/`)
-- **Footer**: used in [src/App.jsx](src/App.jsx#L5) (rendered in root layout)
-- **HotelRoom**: used in [src/App.jsx](src/App.jsx#L6) (route `/room`)
-- **HotelDetail**: imported and rendered in [src/App.jsx](src/App.jsx#L9)
+- 🏠 Modern and responsive homepage
+- 🔍 Hotel and room search
+- 🏨 Browse available hotels
+- 🛏️ Explore hotel rooms
+- 📋 Detailed room information
+- ⭐ Featured hotels section
+- 🎁 Special offers and deals
+- 💬 Customer testimonials
+- 📱 Responsive design for different screen sizes
+- 🧭 Easy navigation between pages
 
-- **Home subcomponents** (used inside [src/Home/Home.jsx](src/Home/Home.jsx#L1)):
-  - `Featured` — renders featured hotel cards ([src/components/Featured.jsx](src/components/Featured.jsx#L1))
-  - `Offercard` — renders exclusive offer cards ([src/components/Offercard.jsx](src/components/Offercard.jsx#L1))
-  - `Feedback` — renders testimonial cards ([src/components/Feedback.jsx](src/components/Feedback.jsx#L1))
-  - `CheckRoom` — booking search form ([src/components/CheckRoom.jsx](src/components/CheckRoom.jsx#L1))
+## 🖥️ Pages
 
-- **HotelRoom subcomponents**:
-  - `Rooms` — used inside [src/components/HotelRoom.jsx](src/components/HotelRoom.jsx#L1) to render room lists ([src/components/Rooms.jsx](src/components/Rooms.jsx#L1))
+### 🏠 Home
 
-- **Rooms**: standalone list component; currently not referencing other custom components ([src/components/Rooms.jsx](src/components/Rooms.jsx#L1)).
-- **RoomDetail**: component present at [src/components/RoomDetail.jsx](src/components/RoomDetail.jsx#L1) — not referenced elsewhere in the codebase (no imports found).
+The homepage provides an overview of QuickStay with:
 
-- **Offercard**: used in [src/Home/Home.jsx](src/Home/Home.jsx#L1) (see Offers section)
+- Hotel search
+- Featured hotels
+- Special offers
+- Customer feedback
+- Booking sections
 
-- **Featured**, **Feedback**, **CheckRoom**: all used only inside `Home` as listed above.
+### 🏨 Hotels & Rooms
 
-If you'd like, I can:
+Users can browse available hotels and explore the rooms offered by each hotel.
 
-- add links to the exact lines where each component is instantiated; or
-- generate a visual dependency graph (Mermaid) showing these relationships.
-# React + Vite
+### 🛏️ Room Details
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Users can view detailed information about a selected room before proceeding with the booking.
 
-Currently, two official plugins are available:
+### 🔎 Check Room
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Users can enter their requirements and check suitable rooms.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **React.js** — Frontend framework
+- **JavaScript** — Application logic
+- **Vite** — Development and build tool
+- **CSS** — Styling and responsive design
+- **React Router** — Navigation and routing
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Project Structure
+
+```text
+QuickStay/
+│
+├── public/
+│
+├── src/
+│   ├── components/
+│   │   ├── Featured.jsx
+│   │   ├── Offercard.jsx
+│   │   ├── Feedback.jsx
+│   │   ├── CheckRoom.jsx
+│   │   ├── HotelRoom.jsx
+│   │   ├── HotelDetail.jsx
+│   │   ├── Rooms.jsx
+│   │   └── RoomDetail.jsx
+│   │
+│   ├── Home/
+│   │   └── Home.jsx
+│   │
+│   ├── App.jsx
+│   └── ...
+│
+├── package.json
+├── vite.config.js
+└── README.md
+```
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Aryan1309006/QuickStay.git
+```
+### 2. Navigate to the project
+
+```bash
+cd QuickStay
+```
+### 3. Install dependencies
+```bash
+npm install
+```
+
+### 4. Start the development server
+```bash
+npm run dev
+```
+## 🎯 Project Objective
+
+The main objective of QuickStay is to create a simple and user-friendly hotel room booking experience.
+
+The project focuses on:
+
+- 🏗️ Building a real-world React application
+- 🧩 Creating reusable components
+- 📱 Designing responsive user interfaces
+- 🏨 Implementing hotel and room listing functionality
+- 🧭 Providing smooth navigation
+- 🚀 Creating a foundation for a complete full-stack booking platform
+
+---
+
+## 🔮 Future Improvements
+
+The following features can be added in future versions:
+
+- 🔐 User authentication and authorization
+- 📅 Real-time room availability
+- 💳 Online payment integration
+- 📋 Booking history
+- 👤 User profile and dashboard
+- 🏨 Hotel owner dashboard
+- ⭐ Hotel and room reviews
+- 📧 Booking confirmation emails
+- 🔔 Booking notifications
+- 🗄️ Node.js and Express backend
+- 🍃 MongoDB database
+- ☁️ Cloud image storage
+- 📊 Booking and revenue analytics
+
+---
+
+## 🧠 Learning Outcomes
+
+Through this project, I gained practical experience with:
+
+- ⚛️ React.js
+- 🧩 Component-based architecture
+- 🧭 React Router
+- ♻️ Reusable components
+- 📱 Responsive web design
+- 🟨 JavaScript
+- 🎨 UI/UX implementation
+- 📁 Structuring a frontend application
+- 🏨 Building a real-world hotel booking interface
+
+---
+
+## 👨‍💻 Author
+
+**Aryan Patil**
+
+GitHub: [@Aryan1309006](https://github.com/Aryan1309006)
+
+---
+
+## ⭐ Show Your Support
+
+If you like this project, consider giving it a ⭐ on GitHub.
+
+---
+
+## 🏨 QuickStay
+
+**Find your stay. Book your room. Enjoy your journey.**
